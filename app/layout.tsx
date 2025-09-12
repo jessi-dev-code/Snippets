@@ -44,7 +44,11 @@ export default function RootLayout({
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="container mx-auto p-12">
-          <h1 className="text-4xl font-bold mb-8">Home <ThemeSwitch className="ml-10" /></h1>
+            <Link href="/">
+          <h1 className="text-4xl font-bold mb-8">Home 
+            </h1>
+            </Link>
+            <ThemeSwitch className="ml-10" />
           {children}
           </div>
         </Providers>
